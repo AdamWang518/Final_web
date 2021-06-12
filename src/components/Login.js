@@ -3,6 +3,13 @@ import { Grid,Paper, Avatar, TextField, Button, Typography } from '@material-ui/
 import LockIcon from '@material-ui/icons/Lock';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
 import Checkbox from '@material-ui/core/Checkbox';
+import axios from "./axios";
+
+
+const Submit=()=>{
+    
+}
+
 const Login=()=>{
 
     const paperStyle={padding :20,height:'70vh',width:280, margin:"20px auto"}
@@ -26,7 +33,7 @@ const Login=()=>{
                     }
                     label="Remember me on this device"
                  />
-                <Button type='Login' color='primary' variant="contained" style={btnstyle} fullWidth>Login</Button>
+                <Button type='Login' color='primary' onClick={Submit()} variant="contained" style={btnstyle} fullWidth >Login</Button>
                 <Typography > Don't have an account ?
                 <a href="/SignUp">Sign Up</a>
                 </Typography>

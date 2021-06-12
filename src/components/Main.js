@@ -8,18 +8,21 @@ const main = () => {
   return (
     <Grid align="center">
       <h1>Please Choose the funtion you need</h1>
-      <Button type="TodoList" color="primary" variant="contained">
+      <a href="/TodoList">
+      <Button type="TodoList" color="primary" variant="contained" >
         Todo List
       </Button>
-      <Button type="Schedule" color="primary" variant="contained">
-        Schedule
-      </Button>
-      <Button type="Log Out" color="primary" variant="contained">
-        Log Out
-      </Button>
+      </a>
+      <a href="/Gallery">
       <Button type="Gallery" color="primary" variant="contained">
         Gallery
       </Button>
+      </a>
+      <a href="/Login">
+      <Button type="Log Out" color="primary" variant="contained" >
+        Log Out
+      </Button>
+      </a>
     </Grid>
   );
 };
