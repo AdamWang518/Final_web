@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   Grid,
   Paper,
@@ -8,12 +8,25 @@ import {
   Typography,
 } from "@material-ui/core";
 import LockIcon from "@material-ui/icons/Lock";
+import axios from "axios";
 const SignUp = () => {
   const paperStyle = {
     padding: 20,
     height: "70vh",
     width: 280,
     margin: "20px auto",
+  };
+  const [usernameSub, setUsername] = useState("");
+  const [passwordSub, setPassword] = useState("");
+  const handleUserChange = (e) => {
+    setUsername(e.target.value);
+  };
+  const handlePasswordChange = (e) => {
+    setPassword(e.target.value);
+  };
+  const handleSubmit = () => {
+    console.log(usernameSub);
+    console.log(passwordSub);
   };
   const avatarStyle = { backgroundColor: "#1bbd7e" };
   const btnstyle = { margin: "8px 0" };
@@ -31,6 +44,7 @@ const SignUp = () => {
           placeholder="Enter your username"
           fullWidth
           required
+          onChange={handleUserChange}
         />
         <TextField
           label="Password"
@@ -38,6 +52,7 @@ const SignUp = () => {
           type="password"
           fullWidth
           required
+          onChange={handlePasswordChange}
         />
         <a href="/Login">
           <Button
@@ -46,6 +61,7 @@ const SignUp = () => {
             variant="contained"
             style={btnstyle}
             fullWidth
+            onClick={handleSubmit}
           >
             Sign up
           </Button>
