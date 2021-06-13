@@ -14,6 +14,7 @@ const Gallery = () => {
     const data = $.getJSON(dataUrl);
     data.done(function (msg) {
       $.each(msg.items, function (i, item) {});
+      
     });
     data.fail(function (msg) {
       console.log(msg);

@@ -22,26 +22,25 @@ const Login = () => {
     setPassword(e.target.value);
   };
   const handleSubmit = () => {
-    const loginData = async () => {
-      //利用Axios API取得bytehost數據庫的數據
-      const Data = await axios
-        .get(
-          "http://final.byethost8.com/php/login.php?userName=" +
-            usernameSub +
-            "&password=" +
-            passwordSub
-        )
-        .then((res) => {
-          console.log(res);
-          const userName = res[1];
-          const userPassword = res[2];
-          if (userName === usernameSub && userPassword === passwordSub) {
-          }
-        })
-        .catch((err) => {
-          console.log(err);
-        });
-    };
+    axios
+      .get(
+        "http://192.168.50.36/php/login.php?userName=" +
+          usernameSub +
+          "&password=" +
+          passwordSub
+      )
+      .then((res) => {
+        console.log(res);
+        if (
+          res.data.data[0].username === usernameSub &&
+          res.data.data[0].password === passwordSub
+        ) {
+          window.location.href = "/Main";
+        }
+      })
+      .catch((err) => {
+        console.log(err);
+      });
   };
 
   const paperStyle = {

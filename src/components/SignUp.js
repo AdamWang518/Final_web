@@ -25,8 +25,16 @@ const SignUp = () => {
     setPassword(e.target.value);
   };
   const handleSubmit = () => {
-    console.log(usernameSub);
-    console.log(passwordSub);
+    axios.get(
+      "http://192.168.50.36/php/signup.php?userName=" +
+        usernameSub +
+        "&password=" +
+        passwordSub
+    )
+    .then((res) => { console.table(res.data)
+      window.location.href = "/Login";
+     })
+    .catch((error) => { console.error(error) })
   };
   const avatarStyle = { backgroundColor: "#1bbd7e" };
   const btnstyle = { margin: "8px 0" };
@@ -54,7 +62,6 @@ const SignUp = () => {
           required
           onChange={handlePasswordChange}
         />
-        <a href="/Login">
           <Button
             type="submit"
             color="primary"
@@ -65,7 +72,6 @@ const SignUp = () => {
           >
             Sign up
           </Button>
-        </a>
         <Typography>
           {" "}
           Do you have an account ?<a href="/Login">Login</a>
