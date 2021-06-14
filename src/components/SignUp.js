@@ -26,7 +26,7 @@ const SignUp = () => {
   };
   const handleSubmit = () => {
     axios.get(
-      "https://helloheroku518.herokuapp.com/signup.php?userName=" +
+      "https://zhenghui.idv.tw/Profoilo/MusicBox/php/login.php?userName=" +
         usernameSub +
         "&password=" +
         passwordSub
