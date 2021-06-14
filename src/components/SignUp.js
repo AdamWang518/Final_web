@@ -26,7 +26,7 @@ const SignUp = () => {
   };
   const handleSubmit = () => {
     axios.get(
-      "https://zhenghui.idv.tw/Profoilo/MusicBox/php/login.php?userName=" +
+      "https://zhenghui.idv.tw/Profoilo/MusicBox/php/signup.php?userName=" +
         usernameSub +
         "&password=" +
         passwordSub

@@ -23,7 +23,7 @@ const Login = () => {
   const handleSubmit = () => {
     axios
       .get(
-        "https://zhenghui.idv.tw/Profoilo/MusicBox/php/signup.php?userName=" +
+        "https://zhenghui.idv.tw/Profoilo/MusicBox/php/login.php?userName=" +
           usernameSub +
           "&password=" +
           passwordSub
