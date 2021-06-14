@@ -26,7 +26,7 @@ const SignUp = () => {
   };
   const handleSubmit = () => {
     axios.get(
-      "http://192.168.50.36/php/signup.php?userName=" +
+      "https://helloheroku518.herokuapp.com/signup.php?userName=" +
         usernameSub +
         "&password=" +
         passwordSub
