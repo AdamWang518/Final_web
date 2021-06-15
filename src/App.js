@@ -5,7 +5,7 @@ import SignUp from "./components/SignUp";
 import { Route } from "react-router-dom";
 import TodoList from "./components/TodoList/TodoList";
 import Main from "./components/Main";
-import Gallery from "./components/Gallery";
+import Calendar from "./components/Calendar";
 import ReactGa from "react-ga";
 function App() {
   useEffect(() => {
@@ -15,7 +15,7 @@ function App() {
     ReactGa.pageview("/Login");
     ReactGa.pageview("/SignUp");
     ReactGa.pageview("/TodoList");
-    ReactGa.pageview("/Gallery");
+    ReactGa.pageview("/Calendar");
   }, []);
   useEffect(() => {
     console.log(window.location.pathname + window.location.search);
@@ -27,7 +27,7 @@ function App() {
       <Route path="/Login" component={Login} />
       <Route path="/SignUp" component={SignUp} />
       <Route path="/TodoList" component={TodoList} />
-      <Route path="/Gallery" component={Gallery} />
+      <Route path="/Calendar" component={Calendar} />
     </div>
   );
 }
