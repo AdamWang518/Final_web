@@ -10,7 +10,7 @@ const main = () => {
           Todo List
         </Button>
       </a>
-      <a href="/Calender">
+      <a href="/Calendar">
         <Button type="Calendar" color="primary" variant="contained">
           Calendar
         </Button>
