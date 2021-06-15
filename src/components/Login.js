@@ -57,10 +57,6 @@ const Login = () => {
         </Grid>
         <TextField label="Username" placeholder="Enter your username" onChange={handleUserChange} fullWidth required/>
         <TextField label="Password" placeholder="Enter your password" type="password" onChange={handlePasswordChange} fullWidth required/>
-        <FormControlLabel
-          control={<Checkbox name="checkedB" color="primary" />}
-          label="Remember me on this device"
-        />
         <Button type="Login" color="primary" onClick={handleSubmit} variant="contained" style={btnstyle} fullWidth>
           Login
         </Button>
