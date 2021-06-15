@@ -13,7 +13,7 @@ function App() {
     ReactGa.pageview("/");
   }, []);
   useEffect(() => {
-    console.log(window.location.pathname);
+    console.log(window.location.pathname + window.location.search);
   });
   return (
     <div className="container">
