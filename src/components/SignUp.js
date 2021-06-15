@@ -75,13 +75,6 @@ const SignUp = () => {
         <Typography>
           {" "}
           Do you have an account ?<a href="/Login">Login</a>
-          {/* <Switch>
-                <Route>
-                <Link to="/login">
-                        Login 
-                </Link>
-                </Route>
-                </Switch> */}
         </Typography>
       </Paper>
     </Grid>

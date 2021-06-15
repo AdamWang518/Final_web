@@ -41,12 +41,8 @@ const Login = () => {
         console.log(err);
       });
   };
-
   const paperStyle = {
-    padding: 20,
-    height: "70vh",
-    width: 280,
-    margin: "20px auto",
+    padding: 20,height: "70vh",width: 280,margin: "20px auto",
   };
   const avatarStyle = { backgroundColor: "#1bbd7e" };
   const btnstyle = { margin: "8px 0" };
@@ -59,33 +55,13 @@ const Login = () => {
           </Avatar>
           <h2>Login</h2>
         </Grid>
-        <TextField
-          label="Username"
-          placeholder="Enter your username"
-          onChange={handleUserChange}
-          fullWidth
-          required
-        />
-        <TextField
-          label="Password"
-          placeholder="Enter your password"
-          type="password"
-          onChange={handlePasswordChange}
-          fullWidth
-          required
-        />
+        <TextField label="Username" placeholder="Enter your username" onChange={handleUserChange} fullWidth required/>
+        <TextField label="Password" placeholder="Enter your password" type="password" onChange={handlePasswordChange} fullWidth required/>
         <FormControlLabel
           control={<Checkbox name="checkedB" color="primary" />}
           label="Remember me on this device"
         />
-        <Button
-          type="Login"
-          color="primary"
-          onClick={handleSubmit}
-          variant="contained"
-          style={btnstyle}
-          fullWidth
-        >
+        <Button type="Login" color="primary" onClick={handleSubmit} variant="contained" style={btnstyle} fullWidth>
           Login
         </Button>
         <Typography>
