@@ -13,7 +13,7 @@ function App() {
     ReactGa.pageview("/");
     ReactGa.pageview("/Main");
     ReactGa.pageview("/Login");
-    ReactGa.pageview("/SignUp");
+    ReactGa.pageview("/signUp");
     ReactGa.pageview("/TodoList");
     ReactGa.pageview("/Calendar");
   }, []);
