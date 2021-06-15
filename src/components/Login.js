@@ -39,6 +39,7 @@ const Login = () => {
       })
       .catch((err) => {
         console.log(err);
+        window.location.href = "/Login";
       });
   };
   const paperStyle = {
