@@ -10,8 +10,8 @@ const main = () => {
           Todo List
         </Button>
       </a>
-      <a href="/Gallery">
-        <Button type="Gallery" color="primary" variant="contained">
+      <a href="/Calender">
+        <Button type="Calendar" color="primary" variant="contained">
           Calendar
         </Button>
       </a>
