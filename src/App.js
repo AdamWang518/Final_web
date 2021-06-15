@@ -11,11 +11,7 @@ function App() {
   useEffect(() => {
     ReactGa.initialize("UA-193353572-2");
     ReactGa.pageview("/");
-    ReactGa.pageview("/Main");
-    ReactGa.pageview("/Login");
-    ReactGa.pageview("/SignUp");
-    ReactGa.pageview("/TodoList");
-    ReactGa.pageview("/Gallery");
+    
   }, []);
   useEffect(() => {
     console.log(window.location.pathname + window.location.search);
